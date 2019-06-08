@@ -30,7 +30,7 @@ public class DNS {
 		DNS obj=new DNS();
 		do
 		{
-			System.out.println("Welcome");
+			
 			System.out.println("1. IP Address from URL\n2. Hostname from IP Address\n3. Exit\nEnter Your Choice : ");
 			ch=Integer.parseInt(s.nextLine());
 			switch(ch)
