@@ -14,7 +14,7 @@ public class Client
 		 Socket socket=serverSocket.accept();
 		 System.out.println("Server Connected");
 		 BufferedReader input= new BufferedReader(
-				 new InputStreamReader(socket.getInputStream()));
+		 new InputStreamReader(socket.getInputStream()));
 		 PrintWriter output= new PrintWriter(socket.getOutputStream(),true);
 		 while (true) 
 		 {
