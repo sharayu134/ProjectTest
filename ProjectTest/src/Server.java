@@ -10,13 +10,8 @@ public class Server
 	{
 		try(Socket socket = new Socket("localhost",5001) )
 		{
-			
-			
-			
-			BufferedReader inbuf= new BufferedReader(
-					new InputStreamReader(socket.getInputStream()));
+			BufferedReader inbuf= new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			PrintWriter opp= new PrintWriter(socket.getOutputStream(),true);
-			
 			Scanner scanner= new Scanner(System.in);
 			String echoMsg;
 			String response;
@@ -30,7 +25,7 @@ public class Server
 				if(!echoMsg.equals("exit"))
 				{
 					response=inbuf.readLine();
-					System.out.println("Server Response :"+response);
+					System.out.println("Server Response :"+response);  //adding some comments here
 				}
 				
 				
